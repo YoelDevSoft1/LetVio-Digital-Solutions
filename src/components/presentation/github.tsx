@@ -1,5 +1,4 @@
 import { Button, Card, CardBody, Typography } from "@material-tailwind/react";
-import { StarIcon } from "@heroicons/react/24/solid";
 
 export function AstroSection() {
   return (

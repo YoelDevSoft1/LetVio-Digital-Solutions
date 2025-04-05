@@ -10,7 +10,8 @@
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "strict": true,
-    "importsNotUsedAsValues": "error",
+    // "importsNotUsedAsValues": "error", // <-- LÍNEA ANTIGUA ELIMINADA
+    "verbatimModuleSyntax": true,      // <-- LÍNEA NUEVA AÑADIDA
     "jsx": "react-jsx",
     "jsxImportSource": "react"
   },

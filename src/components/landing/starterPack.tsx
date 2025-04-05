@@ -22,12 +22,12 @@ export function ContentSectionOne() {
             <div className="inline-flex flex-wrap gap-3">
                {/* BOTONES MODIFICADOS */}
                <a href="/paquetes">
-                 <Button variant="outlined" color="dark" size="lg">
+                 <Button variant="outlined" color="gray" size="lg">
                    Conoce Nuestros Paquetes
                  </Button>
                </a>
                <a href="/contacto">
-                 <Button color="dark" size="lg"> {/* Puedes cambiar color="dark" por tu color principal, ej. "purple" */}
+                 <Button color="blue" size="lg"> {/* Puedes cambiar color="blue" por tu color principal, ej. "purple" */}
                    Contáctanos
                  </Button>
                </a>

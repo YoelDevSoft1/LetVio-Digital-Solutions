@@ -18,6 +18,7 @@ interface FeatureCardProps {
   children: React.ReactNode;
 }
 
+
 // El componente FeatureCard se mantiene igual
 function FeatureCard({ icon, title, children }: FeatureCardProps) {
   return (

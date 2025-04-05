@@ -47,7 +47,7 @@ export function HeroSectionTwo() {
               En LETVIO DIGITAL SOLUTIONS diseñamos y desarrollamos sitios web modernos y rápidos en Bogotá, utilizando tecnologías como Astro y React para destacar tu marca y alcanzar tus objetivos.
             </Typography>
             <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
-              <Button color="dark" className="flex items-center">
+              <Button color="blue" className="flex items-center">
                 <img
                   src="logos/logo-ios.svg"
                   alt="ios"
