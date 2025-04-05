@@ -61,19 +61,19 @@ const posts = [
     img: "aboutus.jpg",
     title: "About Us Page",
     desc: "Designed to introduce the website's purpose and encourage the user to take an action.",
-    url: "https://demos.creative-tim.com/astro-launch-ui/about",
+    url: "https://demos.creative-tim.com//about",
   },
   {
     img: "signin.jpg",
     title: "Sign In Page",
     desc: "It's designed to provide the user with all the necessary information for a secure login.",
-    url: "https://demos.creative-tim.com/astro-launch-ui/login",
+    url: "https://demos.creative-tim.com/login",
   },
   {
     img: "404.jpg",
     title: "404 Error Page",
     desc: "If you're looking for essential information to make a decision, our website has it all - just not on this page.",
-    url: "https://demos.creative-tim.com/astro-launch-ui/404",
+    url: "https://demos.creative-tim.com/404",
   },
 ];
 

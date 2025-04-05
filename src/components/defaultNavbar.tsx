@@ -39,11 +39,11 @@ const colors = {
 const accountItems = [
   {
     title: "Login",
-    href: "/astro-launch-ui/login"
+    href: "/login"
   },
   {
     title: "Sign Up",
-    href: "/astro-launch-ui/signup"
+    href: "/signup"
   }
 ];
 
@@ -57,7 +57,7 @@ function AccountListMenu() {
  
   const renderItems = accountItems.map(({ title, href }) => (
     <a href={href} key={title}>
-      <MenuItem>
+      <MenuItem title={title}>
         <Typography variant="paragraph" color="blue-gray" className="mb-1 font-normal">
           {title}
         </Typography>
@@ -86,6 +86,8 @@ function AccountListMenu() {
         </MenuHandler>
         <MenuList
           {...triggers}
+          onPointerEnterCapture={triggers.onMouseEnter}
+          onPointerLeaveCapture={triggers.onMouseLeave}
           className="hidden grid-cols-7 gap-3 overflow-visible lg:grid"
         >
           <ul className="col-span-12 flex w-full flex-col gap-1 outline-none focus:outline-none">
@@ -107,15 +109,15 @@ function AccountListMenu() {
 const navListMenuItems = [
   {
     title: "About Us",
-    href: "/astro-launch-ui/about"
+    href: "//about"
   },
   {
     title: "Landing Page",
-    href: "/astro-launch-ui/landing"
+    href: "/landing"
   },
   {
     title: "404",
-    href: "/astro-launch-ui/404"
+    href: "/404"
   }
 ];
  
@@ -182,7 +184,7 @@ function NavList() {
       <AccountListMenu />
       <Typography
         as="a"
-        href="https://www.creative-tim.com/learning-lab/astro/quick-start/astro-launch-ui/"
+        href="https://www.creative-tim.com/learning-lab/astro/quick-start/"
         variant="small"
         color="blue-gray"
         className="font-normal"
@@ -212,7 +214,7 @@ export default function Example() {
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
-            href="/astro-launch-ui/"
+            href="/"
             variant="h6"
             className="mr-4 cursor-pointer py-1.5 lg:ml-2"
           >
@@ -227,7 +229,7 @@ export default function Example() {
                 Sign In
               </Button>
             </a>
-            <a href="/astro-launch-ui/signup">
+            <a href="/signup">
               <Button size="sm" color="blue-gray">
                 Sign Up
               </Button>
@@ -249,12 +251,12 @@ export default function Example() {
         <Collapse open={openNav}>
           <NavList />
           <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-            <a href="/astro-launch-ui/login">
+            <a href="/login">
               <Button variant="outlined" size="sm" color="blue-gray" fullWidth>
                 Sign In
               </Button>
             </a>
-            <a href="/astro-launch-ui/signup">
+            <a href="/signup">
               <Button size="sm" fullWidth color="blue-gray">
                 Sign Up
               </Button>
