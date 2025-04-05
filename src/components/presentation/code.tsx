@@ -38,7 +38,7 @@ export function CodePresentation() {
             </Typography>
             {/* BOTÓN MODIFICADO */}
             <a href="/portafolio"> {/* Enlace a la futura página de portafolio */}
-              <Button color="dark" variant="text" size="sm" className="flex items-center mx-auto md:mr-auto lg:ml-0 gap-2 mt-4">
+              <Button color="gray" variant="text" size="sm" className="flex items-center mx-auto md:mr-auto lg:ml-0 gap-2 mt-4">
                 Explora Nuestros Proyectos <ArrowRightIcon strokeWidth={2} className="h-5 w-5" />
               </Button>
             </a>

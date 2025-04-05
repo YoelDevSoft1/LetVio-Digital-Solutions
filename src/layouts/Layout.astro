@@ -23,15 +23,17 @@ const { title, metaDescription } = Astro.props;
     <link rel="canonical" href="https://www.creative-tim.com/astro/" />
     <!-- Google Tag Manager -->
     <script>
-      (function (w, d, s, l, i) {
+      (function (w: { [key: string]: any }, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
         var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
+          j = d.createElement(s) as HTMLScriptElement,
           dl = l != "dataLayer" ? "&l=" + l : "";
         j.async = true;
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
+        if (f.parentNode) {
+          f.parentNode.insertBefore(j, f);
+        }
       })(window, document, "script", "dataLayer", "GTM-NKDMSK6");
     </script>
     <!-- End Google Tag Manager -->
@@ -51,7 +53,7 @@ const { title, metaDescription } = Astro.props;
   </body>
   <script
     src="https://kit.fontawesome.com/349ee9c857.js"
-    crossOrigin="anonymous"
+    crossorigin="anonymous"
   ></script>
 </html>
 <style is:global>

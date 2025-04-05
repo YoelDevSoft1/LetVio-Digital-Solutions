@@ -7,7 +7,7 @@ import {
 import ThemeProvider from "../theme-provider"; // Asegúrate que la ruta sea correcta
 
 // El componente StatsCard se mantiene igual
-function StatsCard({ count, title, desc }) {
+function StatsCard({ count, title, desc }: { count: string; title: string; desc: string }) {
   return (
     <Card color="transparent" shadow={false}>
       <Typography variant="h1" className="mb-4 text-5xl text-dark">

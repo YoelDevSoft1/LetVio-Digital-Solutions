@@ -16,8 +16,8 @@ export function SignUp() {
             Enter your email and password to register.
           </Typography>
           <form action="#" className="mx-auto max-w-[24rem] text-left">
-            <Input color="black" size="lg" label="Email" type="email" name="email" />
-            <Button color="dark" size="lg" className="mt-4" fullWidth>
+            <Input color="black" size="lg" label="Email" type="email" name="email" crossOrigin="anonymous" />
+            <Button color="blue-gray" size="lg" className="mt-4" fullWidth>
               get started
             </Button>
             <div className="my-6 flex w-full items-center gap-2">

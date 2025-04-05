@@ -55,7 +55,7 @@ export function HeroSectionTwo() {
                 />
                 Contáctanos
               </Button>
-              <Button color="dark" className="flex items-center">
+              <Button color="gray" className="flex items-center">
                 <img
                   src="logos/logo-android.svg"
                   alt="ios"

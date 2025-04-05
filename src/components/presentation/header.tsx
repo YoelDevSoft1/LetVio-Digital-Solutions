@@ -30,7 +30,7 @@ export function HeroPresentation() {
             <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
               {/* BOTÓN 1 MODIFICADO */}
               <a href="/paquetes"> {/* Enlace a la futura página de paquetes */}
-                <Button color="dark" className="flex items-center">
+                <Button color="gray" className="flex items-center">
                   Ver Paquetes
                 </Button>
               </a>

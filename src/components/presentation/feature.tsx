@@ -3,7 +3,13 @@ import { Card, CardBody, Typography } from "@material-tailwind/react";
 import ThemeProvider from "../theme-provider"; // Asegúrate que la ruta sea correcta
 
 // El componente FeatureCard se mantiene igual, es reutilizable
-function FeatureCard({ icon, title, children }) {
+interface FeatureCardProps {
+  icon: React.ReactNode;
+  title: string;
+  children: React.ReactNode;
+}
+
+function FeatureCard({ icon, title, children }: FeatureCardProps) {
   return (
     <Card color="transparent" shadow={false}>
       <CardBody className="grid justify-center text-center">

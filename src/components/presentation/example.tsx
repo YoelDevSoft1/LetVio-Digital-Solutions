@@ -23,7 +23,7 @@ export function CodePresentation() {
             <Typography
               variant="h2"
               color="blue-gray"
-              className="mb-8 leading-tight lg:mx-52" {/* Clases de margen originales mantenidas */}
+              className="mb-8 leading-tight lg:mx-52" // Clases de margen originales mantenidas
             >
               {/* TÍTULO PRINCIPAL MODIFICADO */}
               LETVIO DIGITAL SOLUTIONS: El Impulso Que Tu Negocio Necesita
