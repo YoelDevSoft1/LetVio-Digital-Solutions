@@ -1,9 +1,23 @@
-import { Typography, Input, Button } from "@material-tailwind/react";
-import ThemeProvider from "../theme-provider";
+import { Typography, Input, Button } from "@material-tailwind/react"; 
+// Input y Button podrían quitarse si no se usa el newsletter
+import ThemeProvider from "../theme-provider"; // Asegúrate que la ruta sea correcta
 
+// ENLACES PRINCIPALES MODIFICADOS
+const links = [
+  { name: "Inicio", href: "/" },
+  { name: "Paquetes", href: "/paquetes" },
+  { name: "Portafolio", href: "/portafolio" },
+  { name: "Contacto", href: "/contacto" },
+  // Puedes añadir 'Sobre Nosotros' si tienes esa página:
+  // { name: "Sobre Nosotros", href: "/nosotros" }, 
+];
 
-const links = ["Overview", "Features", "Pricing", "Careers", "Help", "Privacy"];
-const links2 = ["Terms", "Privacy", "Cookies"];
+// ENLACES SECUNDARIOS/LEGALES MODIFICADOS
+const links2 = [
+ { name: "Política de Privacidad", href: "/privacidad" }, // Deberás crear esta página
+ { name: "Términos y Condiciones", href: "/terminos" }, // Deberás crear esta página
+];
+
 const currentYear = new Date().getFullYear();
 
 export function FooterOne() {
@@ -13,53 +27,51 @@ export function FooterOne() {
         <div className="container mx-auto">
           <div className="flex flex-wrap items-end justify-center gap-8 md:justify-between">
             <div className="text-center md:text-left">
-              <Typography variant="h4" className="mb-6">
-                AstroLaunch UI
+              <Typography variant="h4" className="mb-6" color="blue-gray"> {/* Añadido color */}
+                {/* Mantenemos el nombre corto */}
+                LETVIO 
               </Typography>
               <ul className="flex flex-wrap items-center justify-center md:justify-start">
-                {links.map((link, idx) => (
-                  <li key={link}>
+                {/* Mapeo sobre los enlaces principales modificados */}
+                {links.map(({ name, href }, idx) => (
+                  <li key={name}>
                     <Typography
                       as="a"
-                      href="#"
+                      href={href} // Enlace actualizado
                       color="gray"
                       className={`py-1 font-normal transition-colors hover:text-blue-gray-900 ${
-                        idx === 0 ? "pr-3" : "px-3"
+                        idx === 0 ? "pr-3" : "px-3" // Lógica de padding original mantenida
                       }`}
                     >
-                      {link}
+                      {name} {/* Nombre del enlace actualizado */}
                     </Typography>
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="w-full sm:w-[24rem] sm:min-w-[24rem]">
-              <Typography variant="h6" color="blue-gray" className="mb-3">
-                Stay up to date
-              </Typography>
-              <div className="flex flex-col gap-3 sm:flex-row">
-                <Input color="black" label="Enter your email" />
-                <Button color="dark">subscribe</Button>
-              </div>
-            </div>
+            {/* SECCIÓN NEWSLETTER ELIMINADA */}
+            {/* Si quieres añadirla de nuevo, iría aquí */}
           </div>
           <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-blue-gray-50 py-6 md:justify-between">
             <Typography color="gray" className="text-center font-normal">
-              &copy; {currentYear} Material Tailwind, All rights reserved.
+               {/* TEXTO COPYRIGHT MODIFICADO */}
+              &copy; {currentYear} LETVIO DIGITAL SOLUTIONS, Todos los derechos reservados.
             </Typography>
 
             <ul className="flex items-center">
-              {links2.map((link, idx) => (
-                <li key={link}>
+               {/* Mapeo sobre los enlaces secundarios modificados */}
+              {links2.map(({ name, href }, idx) => (
+                <li key={name}>
                   <Typography
                     as="a"
-                    href="#"
+                    href={href} // Enlace actualizado
                     color="gray"
                     className={`py-1 font-normal transition-colors hover:text-blue-gray-900 ${
-                      idx === links2.length - 1 ? "pl-2" : "px-2"
+                       // Lógica de padding original modificada para solo 2 links
+                      idx === links2.length - 1 ? "pl-2" : "pr-2" 
                     }`}
                   >
-                    {link}
+                    {name} {/* Nombre del enlace actualizado */}
                   </Typography>
                 </li>
               ))}

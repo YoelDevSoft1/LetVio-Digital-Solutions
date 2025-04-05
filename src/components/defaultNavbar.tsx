@@ -35,7 +35,7 @@ const colors = {
   pink: "bg-pink-50 text-pink-500",
 };
  
-// account pages menu
+// account Servicios menu
 const accountItems = [
   {
     title: "Login",
@@ -146,7 +146,7 @@ function NavListMenu() {
               {...triggers}
               className="hidden items-center gap-2 text-blue-gray-900 lg:flex lg:rounded-full"
             >
-              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}
+              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Servicios{" "}
               <ChevronDownIcon
                 strokeWidth={2}
                 className={`h-3 w-3 transition-transform ${
@@ -166,7 +166,7 @@ function NavListMenu() {
         </MenuList>
       </Menu>
       <MenuItem className="flex items-center gap-2 text-blue-gray-900 lg:hidden">
-        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}
+        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Servicios{" "}
       </MenuItem>
       <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
         {renderItems}
@@ -216,7 +216,7 @@ export default function Example() {
             variant="h6"
             className="mr-4 cursor-pointer py-1.5 lg:ml-2"
           >
-            AstroLaunch UI
+            LETVIO 
           </Typography>
           <div className="hidden lg:block">
             <NavList />

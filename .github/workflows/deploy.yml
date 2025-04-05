@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Servicios
 
 on:
   # Trigger the workflow every time you push to the `main` branch
@@ -11,12 +11,12 @@ on:
 # Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
-  pages: write
+  Servicios: write
   id-token: write
 
 # Allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: "Servicios"
   cancel-in-progress: true
 
 jobs:
@@ -36,9 +36,9 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
+      name: github-Servicios
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Servicios
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-Servicios@v1

@@ -22,14 +22,14 @@ export function HeroSectionTwo() {
                 variant="small"
                 className="mr-3 rounded-md bg-dark py-0.5 px-3 font-medium text-white"
               >
-                New
+                Nuevo
               </Typography>
               <Typography
                 color="dark"
                 variant="small"
                 className="!flex !items-center !font-semibold"
               >
-                Personalized coaching in-app
+                Sitios web optimizados con Astro
                 <ArrowSmallRightIcon
                   className="ml-1.5 h-4 w-4"
                   strokeWidth={3}
@@ -41,12 +41,10 @@ export function HeroSectionTwo() {
               color="blue-gray"
               className="mb-8 leading-tight lg:text-6xl"
             >
-              Our company mission is to lead the design apps
+              Nuestra misión es potenciar tu éxito digital
             </Typography>
             <Typography variant="lead" className="lg:pr-20 text-blue-gray-800">
-              It becomes harder for us to give others a hand. We get our heart
-              broken by people we love, even that we give them all we have. Then
-              we lose family over time.
+              En LETVIO DIGITAL SOLUTIONS diseñamos y desarrollamos sitios web modernos y rápidos en Bogotá, utilizando tecnologías como Astro y React para destacar tu marca y alcanzar tus objetivos.
             </Typography>
             <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
               <Button color="dark" className="flex items-center">
@@ -55,7 +53,7 @@ export function HeroSectionTwo() {
                   alt="ios"
                   className="-mt-1 mr-1.5 h-6 w-6"
                 />
-                Download Ios
+                Contáctanos
               </Button>
               <Button color="dark" className="flex items-center">
                 <img
@@ -63,7 +61,7 @@ export function HeroSectionTwo() {
                   alt="ios"
                   className="-mt-0.5 mr-1.5 h-6 w-6"
                 />
-                Download Android
+                Explora Paquetes
               </Button>
             </div>
           </div>

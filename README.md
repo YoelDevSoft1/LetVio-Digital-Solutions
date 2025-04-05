@@ -11,12 +11,12 @@ Introducing **Astro LaunchUI**, the ultimate starter template for your startup w
 **Main Features**
 Build your startup website quickly and efficiently with:
 - 70+ fully coded elements
-- 3 fully coded example pages
+- 3 fully coded example Servicios
 - 30+ blocks
 - Responsive design
 
-**Example Pages**
-We created a set of pre-built pages to help you get inspired or show something to your clients. See them below:
+**Example Servicios**
+We created a set of pre-built Servicios to help you get inspired or show something to your clients. See them below:
 - [Landing Page](https://demos.creative-tim.com/astro-launch-ui/landing/): Designed to introduce the website's purpose and encourage the user to take an action.
 - [Product Page](https://demos.creative-tim.com/astro-launch-ui/product/): It's designed to give the user all the information they need to make a purchase decision
 - [Shopping Page](https://demos.creative-tim.com/astro-launch-ui/shopping-cart/): Includes a summary of the items in the cart and a form for billing and shipping information.
@@ -53,7 +53,7 @@ Inside of your Astro project, you'll see the following folders and files:
 │   ├── header.tsx
 │   ├── layouts
 │   │   └── Layout.astro
-│   ├── pages/
+│   ├── Servicios/
 │   │   ├── 404.astro
 │   │   ├── about.astro
 │   │   ├── index.astro
@@ -63,7 +63,7 @@ Inside of your Astro project, you'll see the following folders and files:
 └── tsconfig.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Astro looks for `.astro` or `.md` files in the `src/Servicios/` directory. Each page is exposed as a route based on its file name.
 
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 

@@ -109,7 +109,7 @@ function ProfileMenu() {
   );
 }
  
-// account pages menu
+// account Servicios menu
 const accountItems = [
   {
     title: "Login",
@@ -220,7 +220,7 @@ function NavListMenu() {
               {...triggers}
               className="hidden items-center gap-2 text-blue-gray-900 lg:flex lg:rounded-full"
             >
-              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}
+              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Servicios{" "}
               <ChevronDownIcon
                 strokeWidth={2}
                 className={`h-3 w-3 transition-transform ${
@@ -240,7 +240,7 @@ function NavListMenu() {
         </MenuList>
       </Menu>
       <MenuItem className="flex items-center gap-2 text-blue-gray-900 lg:hidden">
-        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}
+        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Servicios{" "}
       </MenuItem>
       <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
         {renderItems}
@@ -323,7 +323,7 @@ export default function ComplexNavbar() {
           href="/"
           className="mr-4 ml-2 cursor-pointer py-1.5 font-medium"
         >
-          AstroLaunch UI
+          LETVIO
         </Typography>
         <div className="hidden lg:flex ml-auto">
           <NavList />
@@ -347,7 +347,7 @@ export default function ComplexNavbar() {
             <i className="fab fa-github text-xl leading-none" aria-hidden="true"></i>
           </Button>
         </a>
-        <a href="/astro-launch-ui/#examplePages">
+        <a href="/astro-launch-ui/#exampleServicios">
           <Button color="dark">Get started</Button>
         </a>
       </div>

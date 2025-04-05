@@ -30,8 +30,8 @@ const stats = [
   },
   {
     count: "10",
-    title: "Example Pages",
-    desc: "Save months of work when you use our pre-made pages."
+    title: "Example Servicios",
+    desc: "Save months of work when you use our pre-made Servicios."
   },
   {
     count: "30+",
@@ -67,7 +67,7 @@ export function FigmaPresentation() {
               From idea to design. From design to code. From code to live.
             </Typography>
             <Typography color="blue-gray" className="mb-5 lg:w-[25rem]">
-              All the sections and pages made with these elements will be fully responsive and will look beautiful on all types of screens, including phones, tables, or desktops.
+              All the sections and Servicios made with these elements will be fully responsive and will look beautiful on all types of screens, including phones, tables, or desktops.
             </Typography>
           </div>
           <div className="lg:flex relative">

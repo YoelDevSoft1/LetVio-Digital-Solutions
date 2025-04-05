@@ -81,14 +81,14 @@ const posts = [
 export function BlogSectionThree() {
   return (
     <ThemeProvider>
-      <section id="examplePages">
+      <section id="exampleServicios">
         <div className="container mx-auto px-8 py-10">
           <div className="mb-16 text-left">
             <Typography color="blue" className="mb-2 text-lg font-semibold">
               Get inspired!
             </Typography>
             <Typography variant="h2" color="blue-gray mb-4">
-              Example Pages
+              Example Servicios
             </Typography>
             <Typography color="blue-gray">
               You can start using our fully coded Ecommerce page examples if you want to get inspired or show something to your client.

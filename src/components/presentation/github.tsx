@@ -12,21 +12,21 @@ export function AstroSection() {
         >
           <CardBody className="py-20 px-14 md:w-7/12">
             <Typography color="white" className="font-normal opacity-70">
-              Open Source
+              Tecnología Moderna
             </Typography>
             <Typography
               variant="h2"
               color="white"
               className="mb-5 font-normal"
             >
-              Let's join forces for a better web!
+              Eleva tu negocio con LETVIO
             </Typography>
             <Typography variant="lead" color="white">
-              AstroLaunch UI is an open source and powerful design system that lets you create Ecommerce websites that your users will love.
+              LETVIO DIGITAL SOLUTIONS crea sitios web rápidos y modernos con Astro y React, optimizados para SEO y diseñados para destacar tu marca en Bogotá.
             </Typography>
-            <a href="https://github.com/creativetimofficial/astro-launch-ui">
+            <a href="/contacto">
               <Button color="white" size="sm" variant="outlined" className="flex items-center mt-5">
-                Get Started
+                Comenzar Ahora
               </Button>
             </a>
           </CardBody>

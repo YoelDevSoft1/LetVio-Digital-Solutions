@@ -1,13 +1,16 @@
 import React from "react";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import {
-  EyeIcon,
-  ChatBubbleOvalLeftEllipsisIcon,
-  BoltIcon,
-  FaceSmileIcon,
-  LinkIcon,
-  HeartIcon,
-} from "@heroicons/react/24/solid";
+  EyeIcon, // Reutilizado para Enfoque
+  ChatBubbleOvalLeftEllipsisIcon, // Reutilizado para Comunicación
+  BoltIcon, // Reutilizado para Rendimiento
+  FaceSmileIcon, // Reutilizado para Soporte/Satisfacción
+  // LinkIcon, // No usado en esta versión, se puede quitar
+  HeartIcon, // Reutilizado para Pasión/Calidad
+  CheckIcon, // Usado como alternativa para Paquetes Flexibles
+} from "@heroicons/react/24/solid"; 
+// Importamos CheckIcon desde solid si no estaba ya
+// import ThemeProvider from "../theme-provider"; // Comentado, probablemente no necesario aquí
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -15,6 +18,7 @@ interface FeatureCardProps {
   children: React.ReactNode;
 }
 
+// El componente FeatureCard se mantiene igual
 function FeatureCard({ icon, title, children }: FeatureCardProps) {
   return (
     <Card color="transparent" shadow={false}>
@@ -39,66 +43,75 @@ function FeatureCard({ icon, title, children }: FeatureCardProps) {
   );
 }
 
+// DATOS DE LAS CARACTERÍSTICAS MODIFICADOS PARA LETVIO
 const features = [
   {
-    icon: <EyeIcon className="h-6 w-6" strokeWidth={2} />,
-    title: "Check our team",
+    // Icono reutilizado: Comunicación
+    icon: <ChatBubbleOvalLeftEllipsisIcon className="h-6 w-6" strokeWidth={2} />, 
+    title: "Comunicación Fluida",
     description:
-      "For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one",
+      "Mantenemos un diálogo constante contigo durante todo el proyecto para asegurar que estemos alineados.",
   },
   {
-    icon: (
-      <ChatBubbleOvalLeftEllipsisIcon className="h-6 w-6" strokeWidth={2} />
-    ),
-    title: "Support 24/7",
+    // Icono reutilizado: Enfoque / Visión
+    icon: <EyeIcon className="h-6 w-6" strokeWidth={2} />, 
+    title: "Enfoque en Tus Objetivos",
     description:
-      "As we live, our hearts turn colder. Cause pain is what we go through as we become older. We get insulted by others, lose trust for those others.",
+      "Entendemos tus metas de negocio para que tu sitio web trabaje activamente para ti.",
   },
   {
+    // Icono reutilizado: Velocidad / Rendimiento
     icon: <BoltIcon className="h-6 w-6" strokeWidth={2} />,
-    title: "Unlimited revisions",
+    title: "Rendimiento Optimizado",
     description:
-      "We get back stabbed by friends. It becomes harder for us to give others a hand. We get our heart broken by people we love.",
+      "Priorizamos la velocidad de carga y la eficiencia para una mejor experiencia de usuario y posicionamiento SEO.",
   },
   {
+    // Icono alternativo: Paquetes / Flexibilidad (puedes buscar uno mejor)
+    icon: <CheckIcon className="h-6 w-6" strokeWidth={2} />, 
+    title: "Paquetes Flexibles",
+    description:
+      "Ofrecemos planes claros (Esencial, Negocio, Premium) para adaptarnos a tu presupuesto y necesidades específicas.",
+  },
+   {
+    // Icono reutilizado: Soporte / Satisfacción
     icon: <FaceSmileIcon className="h-6 w-6" strokeWidth={2} />,
-    title: "Payments functionality",
+    title: "Soporte Post-Lanzamiento",
     description:
-      "Like, one thing people can't say is that I'm not trying, and I'm not trying my hardest, and I'm not trying to do the best way I know how.",
+      "No desaparecemos después de la entrega. Te ofrecemos acompañamiento y soporte para asegurar tu tranquilidad.",
   },
   {
-    icon: <LinkIcon className="h-6 w-6" strokeWidth={2} />,
-    title: "Improved platform",
+    // Icono reutilizado: Pasión / Calidad
+    icon: <HeartIcon className="h-6 w-6" strokeWidth={2} />, 
+    title: "Pasión por la Calidad",
     description:
-      "Because it's about motivating the doers. Because I'm here to follow my dreams and inspire other people to follow their dreams, too.",
-  },
-  {
-    icon: <HeartIcon className="h-6 w-6" strokeWidth={2} />,
-    title: "Prebuilt components",
-    description:
-      "We're an extension of your customer service team, and all of our resources are free. Chat to our friendly team 24/7 when you need help.",
+      "Nos encanta lo que hacemos y ponemos dedicación en cada línea de código y cada detalle visual de tu proyecto.",
   },
 ];
 
 export function FeatureSectionOne() {
   return (
+    // <ThemeProvider> // Quitar si no es necesario aquí
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
         <Typography color="dark" className="mb-2 font-bold text-lg">
-          Social Analytics
+          {/* TAGLINE MODIFICADO */}
+          Nuestra Forma de Trabajar
         </Typography>
         <Typography variant="h2" color="blue-gray" className="mb-4">
-          Turn your idea into a startup
+           {/* TÍTULO MODIFICADO */}
+          Un Proceso Transparente y Centrado en Ti
         </Typography>
         <Typography
           variant="lead"
           className="mx-auto w-full px-4 text-blue-gray-800 md:w-10/12 lg:w-7/12 lg:px-8"
         >
-          We&apos;re constantly trying to express ourselves and actualize our
-          dreams. If you have the opportunity to play
+           {/* DESCRIPCIÓN MODIFICADA */}
+          Creemos en la comunicación clara y la colaboración estrecha para asegurar que el resultado final no solo cumpla, sino que supere tus expectativas.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-y-20 md:grid-cols-2 lg:grid-cols-3">
+        {/* Mapeo sobre las características modificadas */}
         {features.map(({ icon, title, description }) => (
           <FeatureCard key={title} icon={icon} title={title}>
             {description}
@@ -106,7 +119,8 @@ export function FeatureSectionOne() {
         ))}
       </div>
     </section>
+    // </ThemeProvider> // Quitar si no es necesario aquí
   );
 }
 
-export default FeatureSectionOne;
+export default FeatureSectionOne; // El nombre exportado sigue siendo FeatureSectionOne

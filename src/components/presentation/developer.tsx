@@ -2,20 +2,22 @@ import React from "react";
 import {
   Typography,
 } from "@material-tailwind/react";
-import ThemeProvider from "../theme-provider";
+import ThemeProvider from "../theme-provider"; // Asegúrate que la ruta sea correcta
 
 export function DevPresentation() {
- 
+
   return (
     <ThemeProvider>
       <div className="flex place-items-center bg-white py-20">
         <div className="container mx-auto items-center flex">
           <div className="text-left mb-8 md:w-1/2">
             <Typography
-              color="blue"
+              // Usando el color púrpura/violeta de tu marca como ejemplo
+              color="purple"
               className="flex items-center font-bold text-lg mb-5"
             >
-              Attention to hiqh-quality code
+              {/* TAGLINE MODIFICADO */}
+              Código de Calidad, Resultados Duraderos
             </Typography>
 
             <Typography
@@ -23,14 +25,17 @@ export function DevPresentation() {
               color="blue-gray"
               className="mb-4 leading-tight"
             >
-              Develop consistenly using Astro architecture principles
+              {/* TÍTULO PRINCIPAL MODIFICADO */}
+              Construimos Experiencias Web Optimizadas y Escalables
             </Typography>
             <Typography color="blue-gray" className="lg:pr-64">
-              Using AstroLaunch UI you get everything you need to start creating your fully functional and responsive Ecommerce website in days, not months.
+              {/* DESCRIPCIÓN MODIFICADA */}
+              Con LETVIO DIGITAL SOLUTIONS, no solo obtienes código limpio y eficiente. Te ofrecemos un proceso estructurado, desde el paquete esencial hasta soluciones premium, asegurando un sitio web que no solo luce bien, sino que también cumple tus objetivos de negocio y es fácil de mantener.
             </Typography>
             
           </div>
-          <img src="consistenly.png" alt="components" className="mx-auto hidden md:flex md:w-1/2" />
+          {/* Imagen original del template. Cambiar después */}
+          <img src="consistenly.png" alt="Desarrollo web consistente y de calidad - Letvio" className="mx-auto hidden md:flex md:w-1/2" />
         </div>
       </div>
     </ThemeProvider>
